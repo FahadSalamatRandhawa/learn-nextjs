@@ -9,5 +9,5 @@ Solidity is used to write smart contracts, hardhat is used to run those contract
 
 It might make more sense to think of solidity contracts as classes, and we use Ethers.js to interact with those classes and make instances, and then test the functionality of those instances while running them in HardHat enviornment. 
 
-### Below I will list some common commands and what they do
+**Below I will list some common commands and what they do** 
 
