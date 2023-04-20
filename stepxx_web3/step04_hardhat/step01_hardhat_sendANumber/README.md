@@ -12,9 +12,9 @@ npx hardhat node
 npx hardhat run scripts/deploy.ts
 ```
 ---
-In this task we will send a random number bewtween 1 to 10 to our smart contract, and we will write a test to check whether it is above 5 or less than 5. We will also console.log our number in the smart contract.
+### **In this task we will send a random number bewtween 1 to 10 to our smart contract, and we will write a test to check whether it is above 5 or less than 5. We will also console.log our number in the smart contract.**
 
-Create a new file in `contracts` folder called ***Number.sol***(solidity extension is always *.sol)
-Then create a new file called Number.ts in `test` folder called ***Number.ts***(ethers file extension can be *.js or *.ts)  < * represents any name >
+- Create a new file in `contracts` folder called ***Number.sol***(solidity extension is always *.sol)
+- Then create a new file called Number.ts in `test` folder called ***Number.ts***(ethers file extension can be *.js or *.ts)  < * represents any name >
 
 *I will explain the code step by step in the files*
