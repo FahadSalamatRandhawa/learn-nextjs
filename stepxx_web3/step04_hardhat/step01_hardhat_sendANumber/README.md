@@ -17,4 +17,4 @@ npx hardhat run scripts/deploy.ts
 - Create a new file in `contracts` folder called ***Number.sol***(solidity extension is always *.sol)
 - Then create a new file called Number.ts in `test` folder called ***Number.ts***(ethers file extension can be *.js or *.ts)  < * represents any name >
 
-*I will explain the code step by step in the files*
+*I will explain the code step by step in the files >the explanation I provide about the `Code` will be wirtten in /*explanation*/ and not the //*
