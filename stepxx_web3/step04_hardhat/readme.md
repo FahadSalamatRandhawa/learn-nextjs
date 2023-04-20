@@ -2,6 +2,8 @@
 
 In this directory we will create baby steps to learn Hardhat following this [Tutorial for Beginners](https://hardhat.org/tutorial)
 
+---
+
 ## Understanding hardhat
 Hardhat is NOT a programing language but rather a development enviornment for Ethereum contracts(also knows an solidity contracts), consider it like Node.js, the same way Node.js allows us to run JavaScript outside of a browser, Hardhat allows us to run smart contracts locally.
 
