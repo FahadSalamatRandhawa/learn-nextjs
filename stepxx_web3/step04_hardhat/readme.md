@@ -13,6 +13,7 @@ It might make more sense to think of solidity contracts as classes, and we use E
 
 **Below I will list some common commands and what they do** 
 - `npx hardhat`   [creates a hardhat project environment setup,choose typescript]
+(also install `npm install --save-dev "hardhat@^2.14.0" "@nomicfoundation/hardhat-toolbox@^2.0.0"`)
 - `npx hardhat compile`  [compiles smart contracts in the **contracts** folder in root directory]
 - `npx hardhat test`   [runs the test files one by one in the **test** folder in root directory]
 
