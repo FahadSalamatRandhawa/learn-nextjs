@@ -11,7 +11,10 @@ Solidity is used to write smart contracts, hardhat is used to run those contract
 
 It might make more sense to think of solidity contracts as classes, and we use Ethers.js to interact with those classes and make instances, and then test the functionality of those instances while running them in HardHat enviornment. 
 
-**Below I will list some common commands and what they do** 
+*you need node>=16 and hardhad to create a hardhat project*
+`npm install --save-dev hardhat`
+
+**Below I will list some common commands and what they do**
 - `npx hardhat`   [creates a hardhat project environment setup,choose typescript]
 (also install `npm install --save-dev "hardhat@^2.14.0" "@nomicfoundation/hardhat-toolbox@^2.0.0"`)
 - `npx hardhat compile`  [compiles smart contracts in the **contracts** folder in root directory]
