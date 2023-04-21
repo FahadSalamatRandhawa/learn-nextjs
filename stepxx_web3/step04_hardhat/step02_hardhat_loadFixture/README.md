@@ -6,13 +6,13 @@ You can avoid code duplication and improve the performance of your test suite by
 
 ### Why we need Load Fixture
 
-By using the fixture function, we can ensure that each test starts with a fresh instance of the contract(here on called as `Contract Instance`), and any state changes made to it, in previous tests do not affect the current test.
+By using the fixture function, we can ensure that each test starts with a fresh instance of the contract(here on called as `Contract Instance`), and any state(data members) changes made to it, in previous tests do not affect the current test.
 
 >Im simple words we use this function to refresh the `Contract Instance` to a fresh state with the default values, instead of creating a new `Instance` from start because that will cause us to duplicate code.
 
 ---
 - #### How to use Load Fixture
-We do this by creating a simple functio(sampleName `contractInstanceFunction`)n which creates a `Contract Instance` returns us the deployed version and other values. Then we wrap that function inside the  `await loadFixture()`
+We do this by creating a simple function(sampleName `contractInstanceFunction`) which creates a `Contract Instance` returns it. Then we wrap that function inside the  `await loadFixture()`
 
-- **Why can't we just recall the contractInstanceFunction**
+- #### Why can't we just recall the contractInstanceFunction
 Because recalling it would use computation power and make the process slow, and consuming
