@@ -42,4 +42,4 @@ export default config;
 - Sepolia balance in your account
 
 >You can also follow this tutorial `https://hardhat.org/tutorial/deploying-to-a-live-network` , 
-after this you can find you contract deployed on the testnet
+after this you can find you contract deployed on the testnet and also an app in your web3 provider account(Alchemy,etc)

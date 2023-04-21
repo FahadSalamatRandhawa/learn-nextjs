@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 
 async function main() {
   const [deployer]=await ethers.getSigners();
-  console.log(`Deployer Adress : `,deployer.address);
+  console.log(`Deployer Adress : `,deployer.address); //this will console log your account address
 
   console.log(`Built-In Balance : `,(await deployer.getBalance()).toString())
 
