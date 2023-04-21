@@ -20,4 +20,4 @@ npx hardhat run scripts/deploy.ts
 
 
 >*I will explain the code step by step in the files*, the explanation I provide about the `Code` will be wirtten in `/*explanation*/` and not the `//`
->Tip : if your imports keep giving error even after correct dependency, press windows+shift+p, and run Developer Window Reload in VS Code
+>Tip : if your imports keep giving error even after correct dependency, press `windows+shift+p`, and run Developer Window Reload in VS Code

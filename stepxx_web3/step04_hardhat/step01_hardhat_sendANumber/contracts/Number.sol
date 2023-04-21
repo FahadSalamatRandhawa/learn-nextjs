@@ -15,13 +15,12 @@
         randomNumber=0;
     }
     function setRandomNumber(uint random_Number)external{
-        console.log(random_Number,'coming from user');
         randomNumber=random_Number;
         
-        console.log(randomNumber, 'assigned to contract');
+        console.log(randomNumber, 'assigned to contract INSIDE CONTRACT');
     }
     function getRandomNumber() external view returns (uint){  /* view functions can only read and return values of state variables */
-        console.log('Returning Number');
+        //console.log('Returning Number');
         uint temp=5;
         temp=0;
         return randomNumber;
