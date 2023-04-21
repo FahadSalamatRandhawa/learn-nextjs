@@ -3,7 +3,9 @@ You can deploy your contract on any network with the follwing command
 
 - `npx hardhat run <filePath> --network <network-name>`
 
-you also need need to add the network to your `hardhat.config` file, it should like something like this 
+you also need need to add the network to your `hardhat.config` file, it should like something like this
+
+>You can choose any network, we will use sepolia testnet
 
 ```s
 import { HardhatUserConfig } from "hardhat/config";
@@ -33,3 +35,10 @@ const config: HardhatUserConfig = {
 
 export default config;
 ```
+
+- ### Prequisits for this
+- Wallet/Account, Alchemy or any Web3 Infratsructure provider (Alchemy, Infura, etc)
+- Seplia balance in your account
+
+>You can also follow this tutorial `https://hardhat.org/tutorial/deploying-to-a-live-network` , 
+after this you can find you contract deployed on the testnet
