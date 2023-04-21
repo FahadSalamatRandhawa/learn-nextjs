@@ -1,5 +1,6 @@
 ### Deployment
-You can deploy your contract on any network with the follwing command, we will deploy our previous contract and it has a balance by default
+You can deploy your contract on any network with the follwing command, we will deploy our previous contract and it has a balance by default.
+We will write a script in the scripts folder, the process is almost the same as a test
 
 - `npx hardhat run <filePath> --network <network-name-fromconfigfile>`
 
