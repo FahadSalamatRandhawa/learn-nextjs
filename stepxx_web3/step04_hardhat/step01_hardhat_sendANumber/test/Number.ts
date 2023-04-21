@@ -5,7 +5,7 @@ import {z} from 'zod'
 //To test any contract, you need a combination of DESCRIBE and IT functions, both of which are built in functions
 
 
-describe("RANDOM NUMBER", function(){/* Describe_Function takes 2 arguments (a message/testName, normal function). if fuction goes ok, test passes */
+describe("RANDOM NUMBER TEST",async function(){/* Describe_Function takes 2 arguments (a message/testName, function). if fuction goes ok, test passes */
     
     it("Deploy",async function(){
         const NumberFactory=await ethers.getContractFactory('Number2'); //Name must be same as your Contract Name in .sol file
