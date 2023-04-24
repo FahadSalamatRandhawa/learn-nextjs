@@ -12,7 +12,7 @@ You can also take help from this [repo](https://github.com/panaverse/defi-dapps-
 Solidity is a language that is very smiliar to C++ or most backend languages, and like those languguages it has functions, variable Types,enums and such. Followin is the structure of a solidity Smart Contract.
 A Solidity Contracts file has the extension *.sol (*being filename)
 ```
-// SPDX-License-Identifier: GPL-3.0 //License for the code <what someone can or cannot do with this code>
+// SPDX-License-Identifier: GPL-3.0 //License for the code
 
 pragma solidity >=0.8.2 <0.9.0; //version of soldity used
 
@@ -34,3 +34,10 @@ contract Storage {
 
 
 - You may have noticed the Solidity Contracts look a lot like Classes in OOP(Object Oriented Programing), and that is very much how they behave.
+
+- `License`, a license in solidity code tells the readers of the code, what can or cannot be done with the CODE, the 
+license identifier line is commented out, so it is not treated as code
+- `State Variable` a state variable is similar to a data member in a class,it can be called a global variable for a Contract
+- `functions` just like any class, contracts have functions of several types, which we will discuss in detail in the steps
+
+>Tip: Always compile your contract after making changes to it, only then will it work properly in the tests/deployments
