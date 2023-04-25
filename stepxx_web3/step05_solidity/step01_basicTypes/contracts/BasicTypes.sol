@@ -7,14 +7,19 @@ pragma solidity ^0.8.9;
 contract BasicTypes {
     bool isSet; //can be true or false
 
-    uint positiveOnly;//units hold only positive values
+    uint positiveOnly;//units holds any only positive value
     uint256 sameAsUint;//only name is different, same as uint
-    uint8 n=255;
+    uint8 numBytes8=255;
+    //uint8 numBytes8Again=256;// will give error
 
-    int16 nn=-5556;
 
     int anyNumber;//can hold positive or negative values
     int256 sameAsInt;//same as int, only name is different
-    bytes5 bb="21123";
+    int8 intBytes8=-128;
+    //int8 intBytes8Again=-5556;//will give error
 
+    bytes5 stringBytes="21123";
+
+    address myAddress=0x7E7CcFB39B9D31D62cd9e2e066e0AaEA02543Cb4;
+    address payableAddress=payable(0x7E7CcFB39B9D31D62cd9e2e066e0AaEA02543Cb4);
 }
