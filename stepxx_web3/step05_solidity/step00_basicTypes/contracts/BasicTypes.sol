@@ -9,9 +9,12 @@ contract BasicTypes {
 
     uint positiveOnly;//units hold only positive values
     uint256 sameAsUint;//only name is different, same as uint
+    uint8 n=255;
+
+    int16 nn=-5556;
 
     int anyNumber;//can hold positive or negative values
     int256 sameAsInt;//same as int, only name is different
-    bytes bb="21";
+    bytes5 bb="21123";
 
 }

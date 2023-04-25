@@ -2,18 +2,26 @@
 
 #### Bool
 - `bool` true or false values,(undefined or null are NOT supported)
+- default value for uninitialized is false
 #### Unsigned Integer
-- `uint/uint256` also known as unsigned int, holds only positive values.
+- `uint/uint256` also known as unsigned int, holds only positive values. unit ranges from `uint8` to `unit256`, by an increment of 8. The number with uint represents bytes.Each uint variant can hold different range values. The formula to calculate max value for uintBytes is (2^Bytes-1). The uint values start from 0.
+- `uint8`, maxValue=2^8-1 which gives us 255. Giving us value range of 0-255. A total of 256 values
+- `uint16`, maxValue=2^16-1 which gives us 65,535. Giving us range from 0-65,535. A total of 65,536 values
+- Same for next values
+- default value for uninitilized is 0
 #### Integer
-- `int/int256` holds any positive or negative value
+- `int/int256` holds any positive or negative value. These also range from `int8` to `int256`, by increment of 8. The lower limit of an int type is not fixed and the formulas are. lowerValue=(-2^(Bytes-1)) , upperValue=(2^(Bytes-1)-1), where Bytes represents the number written with the int
+- `int8`, lowerValue=(-2^7), upperLimit=(2^7-1), giving us range -128 to 127
+- `int16`, lowerValue=(-2^15), upperLimit=(2^15-1), giving us range -32,768 to 32,767
+- Same for next values
+- default value for uninitilized is 0
 #### String
 - `string` normal string
 #### Bytes
-- `bytes32/bytes` can hold a string of upto 32 characters
+- `bytes32/bytes` can hold a string of upto 32 characters, it ranges from `bytes1` to `bytes32`, the number with bytes specifying how much values can it hold, `bytes5` can only hold 5 digit string '12345', becuase 1 digit in string equals 1 byte
 #### Address
 - `address` holds 20 byte address value
-
-### Variants for Types
+- `address payable` has 2 member functions `transfer`, `send`
 
 
 ### Limitations for Integer Types
