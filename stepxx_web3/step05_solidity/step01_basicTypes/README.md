@@ -16,7 +16,7 @@
 - Same for next values
 - default value for uninitilized is 0
 #### String
-- `string` strings are immutable, once created they cannot be changes, however you can create a newString using the old values and add some new value too
+- `string` strings that are assigned on creation are immutable, once created they cannot be changes, however you can create a newString using the old values and add some new value too
 ```shell
 string memory myString = "Hello";
 myString = string(abi.encodePacked(myString, " world"));
@@ -26,6 +26,10 @@ myString = string(abi.encodePacked(myString, " world"));
 #### Address
 - `address` holds 20 byte address value
 - `address payable` has 2 member functions `transfer`, `send`
+#### fixed and unfixed
+these are not yet supported by Solidity, they can be decalred but cannot be used. M is nunber of bytes from 8-256 in increments of 8 and N represents how many decimal points are available ranging from 0-80
+- `fixedMxN` alias for `fixed128x18`
+- `ufixedMxN` alias for `ufixed128x18`
 
 
 ### Limitations for Integer Types
