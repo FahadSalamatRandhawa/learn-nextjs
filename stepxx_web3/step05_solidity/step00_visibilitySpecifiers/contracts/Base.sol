@@ -10,10 +10,9 @@ contract Base{
     string internal internalString='Internal String in Base';
     string defaultInternal='default internal';  //internal visibility by default
 
+    /** fro now please ignore the view, we will dicuss it in step02 */
+
     function externalFunction()external view returns(string memory){
-        return internalString;
-    }
-    function internalFunction()internal view returns(string memory){
         return internalString;
     }
     function publicFunction()public view returns(string memory) {
