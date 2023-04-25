@@ -16,7 +16,11 @@
 - Same for next values
 - default value for uninitilized is 0
 #### String
-- `string` normal string
+- `string` strings are immutable, once created they cannot be changes, however you can create a newString using the old values and add some new value too
+```shell
+string memory myString = "Hello";
+myString = string(abi.encodePacked(myString, " world"));
+```
 #### Bytes
 - `bytes32/bytes` can hold a string of upto 32 characters, it ranges from `bytes1` to `bytes32`, the number with bytes specifying how much values can it hold, `bytes5` can only hold 5 digit string '12345', becuase 1 digit in string equals 1 byte
 #### Address
