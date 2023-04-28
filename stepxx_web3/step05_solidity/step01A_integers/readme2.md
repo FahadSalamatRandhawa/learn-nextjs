@@ -12,6 +12,9 @@ Numbers can be represented in Solidity in four different ways
 
 ## Binary
 binary is a base-2 numbering system that uses only two digits, 0 and 1, to represent numbers. Each digit in a binary number is called a "bit."
-While binary is used for positive numbers(unsigned), there are also negative numbers. For those we use 
-term
- : Two's complement notation
+While binary is used for positive numbers(unsigned), there are also negative numbers. For those we use Two's complement notation (a method for representing signed integers in binary form. It is the most common way of representing signed integers in computers. In two's complement notation, the leftmost bit, which is called the "sign bit," represents the sign of the number).
+
+- signbit 0 = positive number
+- signbit 1 = negative number
+
+![Two's Complement notation](./assets/Two's%20Complement%20Notation.png)
