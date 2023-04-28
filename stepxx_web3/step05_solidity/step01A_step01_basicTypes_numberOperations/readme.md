@@ -31,10 +31,10 @@ uint8 b = 13; // 0000 1101
 uint8 c = a ^ b; // 0011 0001
 ```
 
-- NOT: When performing the NOT operation on a which is 60 in binary (0011 1100), all the bits are flipped to get 1100 0011, which represents the two's complement of -61 in decimal. Therefore, b is equal to -61.
+- NOT: When performing the NOT operation on a which is 60 in binary (0011 1100), all the bits are flipped to get 1100 0011.
 ```shell
 uint8 a = 60; // 0011 1100
-uint8 b = ~a; // 1100 0011   b=-61
+uint8 b = ~a; // 1100 0011   b=195
 ```
 
 ---
