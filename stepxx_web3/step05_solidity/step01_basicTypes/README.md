@@ -22,10 +22,37 @@ string memory myString = "Hello";
 myString = string(abi.encodePacked(myString, " world"));
 ```
 #### Bytes
-- `bytes32/bytes` can hold a string of upto 32 characters, it ranges from `bytes1` to `bytes32`, the number with bytes specifying how much values can it hold, `bytes5` can only hold 5 digit string '12345', becuase 1 digit in string equals 1 byte
+- **Dynamic Bytes**, `bytes` a dynamical array of bytes.
+- **Fixed Bytes** can hold a string of upto 32 characters, it ranges from `bytes1` to `bytes32`, the number with bytes specifying how much values can it hold, `bytes5` can only hold 5 digit string '12345', becuase 1 digit in string equals 1 byte.
+In Solidity, `bytes` and `bytes32` are both data types used to represent arrays of bytes. However, there are some differences between the two:
+
+Size: bytes is a dynamically sized byte array, while bytes32 is a fixed-size byte array of length 32.
+
+Initialization: bytes arrays can be initialized with a dynamic size, while bytes32 arrays are fixed in size and cannot be resized.
+
+Cost: Operations on bytes32 are typically less expensive in terms of gas cost compared to operations on bytes, due to their fixed size.
+
+Memory layout: bytes are stored in memory as a dynamic array that includes a length field, while bytes32 are stored as a single 32-byte word in memory.
+```shell
+bytes32 b1 = 0x1234;
+bytes32 b2 = 0x5678;
+
+bytes memory b3 = new bytes(64);
+b3[0] = b1[0];
+b3[1] = b1[1];
+b3[2] = b2[0];
+b3[3] = b2[1];
+```
+we create two bytes32 variables b1 and b2, each containing 32 bytes of data. We also create a bytes variable b3, which is a dynamically sized byte array of length 64. We then copy the first two bytes of b1 and the first two bytes of b2 into b3, which gives us a new dynamically sized byte array of length 4 containing the bytes 0x12, 0x34, 0x56, and 0x78.
+
 #### Address
 - `address` holds 20 byte address value
-- `address payable` has 2 member functions `transfer`, `send`
+- `address payable` has 2 additional member functions `transfer`, `send`
+- address members : `balance` and `transfer`. If the contract has a **fallback** or **recieve ether** function it will be executed along with `transfer`. If the `transfer` has no data, the fallback function will be executed. While the fallback function is not intended to handle transactions, it can be used to provide a default behavior in case a user sends Ether to the contract by mistake, without specifying a function to call. For example, a contract could implement a fallback function that simply reverts the transaction, so that any Ether sent to the contract without a specific purpose will be returned to the sender.
+address payable is an address you can send Ether to, while you are not supposed to send Ether to a plain address.
+
+>send failur will return false, while transfer failure will revert the transaction and stop the contract excution
+
 #### fixed and unfixed
 these are not yet supported by Solidity, they can be decalred but cannot be used. M is nunber of bytes from 8-256 in increments of 8 and N represents how many decimal points are available ranging from 0-80
 - `fixedMxN` alias for `fixed128x18`

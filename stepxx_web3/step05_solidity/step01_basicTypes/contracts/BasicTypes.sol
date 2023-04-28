@@ -22,4 +22,6 @@ contract BasicTypes {
 
     address myAddress=0x7E7CcFB39B9D31D62cd9e2e066e0AaEA02543Cb4;
     address payableAddress=payable(0x7E7CcFB39B9D31D62cd9e2e066e0AaEA02543Cb4);
+
+    bytes mab="1234657984785465151131135131s35ad1as1dsa1d32sa1d32as1da3s2d1sa2d13as1da1s2d132sad132s1a23d132sa1d32s1a23d1sad1a2s";
 }
