@@ -46,9 +46,10 @@ b3[3] = b2[1];
 we create two bytes32 variables b1 and b2, each containing 32 bytes of data. We also create a bytes variable b3, which is a dynamically sized byte array of length 64. We then copy the first two bytes of b1 and the first two bytes of b2 into b3, which gives us a new dynamically sized byte array of length 4 containing the bytes 0x12, 0x34, 0x56, and 0x78.
 
 #### Address
+Address is a type that can hold address value of a smart contract or wallet. It has 2 types
 - `address` holds 20 byte address value, cannot receive ether.
 - `address payable` has 2 additional member functions `transfer`, `send`.Address payable is an address you can send Ether to.
-- address members : `balance` and `transfer`. If the contract has a **fallback** or **recieve ether** function it will be executed along with `transfer`. If the `transfer` has no data, the fallback function will be executed. While the fallback function is not intended to handle transactions, it can be used to provide a default behavior in case a user sends Ether to the contract by mistake, without specifying a function to call. For example, a contract could implement a fallback function that simply reverts the transaction, so that any Ether sent to the contract without a specific purpose will be returned to the sender.
+- address members : `balance` and `transfer`. 
 
 >send failur will return false, while transfer failure will revert the transaction and stop the contract excution
 
